@@ -1,8 +1,13 @@
 body {
   background-image: url("http://orig09.deviantart.net/4d5e/f/2007/322/3/e/texture_20_by_insan_stock.jpg");
+  /* Download external image in case this link goes down */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  /* nice use of vendor prefixes!
+   * I think background-size doesn't need them though:
+   * http://caniuse.com/#feat=background-img-opts
+   * */
   background-size: cover;
   margin: 50px 0 100px 0;
 }
@@ -39,6 +44,7 @@ h2{
   color: white;
   font-size: 37px;
   margin: -15px;
+  /* Avoid negative margins when possible. */
 }
 
 .hidden{
@@ -76,7 +82,7 @@ nav li{
 
 div {
   background-image: url('https://pbs.twimg.com/profile_images/588424740223627264/oshWYgF9.jpg');
-  background-repeat: round;
+  background-repeat: round; /* repeat round? */
   border-radius: 5px;
   display: table-cell;
   float: left;
